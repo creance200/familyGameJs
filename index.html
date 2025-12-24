@@ -22,7 +22,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 		<script type="text/javascript">
-
+			var imagesPath = "images/";
 			var imag = [
 			"w1.jpg", "w2.jpg", "w3.jpg", "w4.jpg", "w5.jpg", "w6.png", "w7.jpg", "w8.jpg", "w9.png", "w10.jpg",
 			"w11.jpg", "w12.jpg", "w13.jpg", "w14.jpg", "w15.jpg", "w16.jpg", "w17.jpg", "w18.png", "w19.jpg",			"w20.jpg",
@@ -124,7 +124,7 @@
 				for(i=0; i<nbcases; i++){
 					tmp2 += '<td>';
 					//var img0='<img id="img'+i+'" src="'+tableau_img[i]+'" style="opacity:0.0" onclick="joue('+i+')">';
-					var img0='<img id="img'+i+'" src="'+tableau_img[i]+'" style="opacity:0" onclick="joue('+i+')" onmouseover="parcours('+i+')" onmousedown="return false;">';
+					var img0='<img id="img'+i+'" src="'+imagesPath+tableau_img[i]+'" style="opacity:0" onclick="joue('+i+')" onmouseover="parcours('+i+')" onmousedown="return false;">';
 					tmp2 += img0;
 					tmp2 += '</td>';
 					nbtd++; if(nbtd>=Math.sqrt(nbcases)){
@@ -191,3 +191,4 @@
 		<script src="js/bootstrap.min.js"></script>		
 	</body>
 </html>
+
